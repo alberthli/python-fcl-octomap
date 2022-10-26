@@ -205,7 +205,7 @@ cdef class CollisionObject:
         return self.thisptr.isUncertain()
 
 cdef class CollisionGeometry:
-    cdef defs.CollisionGeometry *thisptr
+    cdef defs.CollisionGeometryd *thisptr
 
     def __cinit__(self):
         pass
