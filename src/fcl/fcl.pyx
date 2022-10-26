@@ -220,12 +220,6 @@ cdef class CollisionGeometry:
         else:
             return None
 
-    def getUserData(self):
-        if self.thisptr:
-            return <void*>self.thisptr.getUserData()
-        else:
-            return None
-        
     def computeLocalAABB(self):
         if self.thisptr:
             self.thisptr.computeLocalAABB()
