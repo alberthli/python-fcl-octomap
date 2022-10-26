@@ -153,6 +153,7 @@ cdef extern from "fcl/geometry/collision_geometry.h" namespace "fcl":
         OBJECT_TYPE getObjectType()
         NODE_TYPE getNodeType()
         void computeLocalAABB()
+        void * getUserData()
         Vector3d aabb_center
         double aabb_radius
         double cost_density
