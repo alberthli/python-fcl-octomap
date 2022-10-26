@@ -222,7 +222,7 @@ cdef class CollisionGeometry:
 
     def getUserData(self):
         if self.thisptr:
-            return self.thisptr.getUserData()
+            return <void*>self.thisptr.getUserData()
         else:
             return None
         
